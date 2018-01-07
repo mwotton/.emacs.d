@@ -1,4 +1,10 @@
 *elc
+*#
+\.#*
+*~
 .DS_Store
 starter-kit-2.*
 *.tar
+elpa
+eshell
+backups
