@@ -66,8 +66,9 @@
           ( sml/setup)))
 
 (display-battery-mode)
-(require 'smart-kill-buffer)
-(ad-activate 'kill-buffer)
+; not working atm
+; (require 'smart-kill-buffer)
+; (ad-activate 'kill-buffer)
 ;(ad-deactivate 'kill-buffer)
 
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
