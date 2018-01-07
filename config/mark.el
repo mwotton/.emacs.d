@@ -5,6 +5,9 @@
 ;;     - stack (with version check)
 ;;     - fonts
 ;;     - ...
+;;   - dir-locals invocation so that in any repo from simspace,
+;;     we use "stylish-haskell | simformat" as the formatter rather
+;;     than just "stylish-haskell"
 (setq inhibit-startup-message t)
 (require 'package)
 (add-to-list 'package-archives
