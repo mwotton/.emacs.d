@@ -7,8 +7,8 @@
 ;;     - ...
 
 (require 'package)
-(add-to-list 'package-archives
-	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
+;(add-to-list 'package-archives
+;	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.org/packages/") t)
 
@@ -17,6 +17,15 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 ; (global-set-key "\M-x" 'company-complete)
+
+; packges to install automatically
+; flx-ido
+; intero
+; flycheck
+; smart-mode-line
+; color-theme-sanityinc-solarized
+; rainbow-delimiters
+
 
 ;; PATHS
 (add-to-list 'load-path "/home/mark/.emacs.d/config")
@@ -65,13 +74,14 @@
           (require 'smart-mode-line)
           ( sml/setup)))
 
-(display-battery-mode)
+;(display-battery-mode)
 (require 'smart-kill-buffer)
-(ad-activate 'kill-buffer)
+;(ad-activate 'kill-buffer)
 ;(ad-deactivate 'kill-buffer)
 
-(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (require 'rainbow-delimiters)
+
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (set-face-attribute 'rainbow-delimiters-unmatched-face nil
                     :foreground 'unspecified
                     :inherit 'error)
@@ -83,6 +93,4 @@
 
 (put 'dired-find-alternate-file 'disabled nil)
 
-
-(color-theme-sanityinc-solarized-dark)
 (provide 'mark)

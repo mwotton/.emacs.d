@@ -1,5 +1,8 @@
 
 
+(add-to-list 'load-path "/home/mark/.emacs.d/config")
+(require 'mark)
+
 
 ;; all automatically managed from here
 (custom-set-variables
@@ -77,5 +80,4 @@
  ;; If there is more than one, they won't work right.
  )
 
-(add-to-list 'load-path "/home/mark/.emacs.d/config")
-(require 'mark)
+(color-theme-sanityinc-solarized-dark)
