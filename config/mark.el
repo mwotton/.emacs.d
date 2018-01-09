@@ -74,7 +74,7 @@
           (require 'smart-mode-line)
           ( sml/setup)))
 
-;(display-battery-mode)
+(display-battery-mode)
 (require 'smart-kill-buffer)
 ;(ad-activate 'kill-buffer)
 ;(ad-deactivate 'kill-buffer)
